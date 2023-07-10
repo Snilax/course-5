@@ -1,0 +1,202 @@
+* {
+    transition: all .1s ease-in;
+}
+
+/* Header */
+header {
+    width: 940px;
+    margin: auto;
+}
+
+nav {
+    max-width: 940px;
+    box-shadow: 0px 5px 4px -3px rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid #828282;
+}
+
+
+
+ul {
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    padding: 25px 0px 0px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu {
+    font-size: 0px;
+}
+
+.menu .menu__item {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 20%;
+    font-size: 18px;
+
+}
+
+.menu .menu__item .menu__link {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+ul li a {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    color: #828282;
+    text-decoration: none;
+}
+
+/* Main */
+.content {
+    text-align: center;
+    width: 940px;
+    margin: auto;
+    padding: 100px 0px 100px 0px;
+}
+
+.wrapper {
+
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #070707;
+    font-size: 47px;
+}
+
+h2 {
+    color: #070707;
+    font-size: 34px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.hero {
+    align-items: center;
+    width: 940px;
+    margin: auto;
+    padding: 0px 0px 100px 0px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 35px;
+}
+
+.about-me {
+    background-color: #f6f6f6;
+    background-size: 100vw 100vh;
+    text-align: center;
+    align-items: center;
+}
+
+.description {
+    color: #070707;
+    width: 480px;
+
+    margin: auto;
+}
+
+.container {
+    font-weight: bold;
+    font-size: 14px;
+    color: #828282;
+
+    display: inline-block;
+    padding: 28px;
+}
+
+.container p {
+    font-size: 14px;
+}
+
+.stars {
+    margin-top: 40px;
+    display: inline-block;
+
+}
+
+.stars img {
+    padding: 5px;
+}
+
+.programs {
+
+    margin-top: 40px;
+}
+
+.portfolio {
+    background-color: #f6f6f6;
+
+}
+
+
+.portfolio h2 {
+    padding-bottom: 50px;
+}
+
+.portfolio p {
+    color: #070707;
+}
+
+/* Footer */
+footer {
+    height: 670px;
+}
+
+
+button {
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #070707;
+    color: #f6f6f6;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    width: 180px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.social {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* pseudo */
+a:focus {
+    color: #070707;
+}
+
+a:hover {
+    font-weight: 600;
+    transition: .2s linear;
+}
+
+.social a:hover {
+    opacity: 0.5;
+    transition: .2s linear;
+    transition-delay: 0;
+}
+
+[type="button"]:hover {
+    border: 2px solid #070707;
+    background: #f6f6f6;
+    color: #070707;
+}
