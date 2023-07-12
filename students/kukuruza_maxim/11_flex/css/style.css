@@ -1,0 +1,121 @@
+body {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+button {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main */
+section {
+    margin-bottom: 100px;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-title {
+    width: 539px;
+    font-size: 36px;
+    margin: 0 auto;
+}
+
+.card-container {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.card {
+    width: 270px;
+}
+
+.card-icon {
+    padding-bottom: 30px;
+}
+
+.card-descrition {
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Footer */
+.footer-links {
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.links-title {
+    color: #2F281E;
+}
+
+a {
+    text-decoration: none;
+    color: #544837;
+    font-size: 16px;
+}
+
+.logo {
+    width: 200px;
+    height: 32px;
+}
+
+.form {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+input {
+    width: 340px;
+    height: 50px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+}
+
+input::placeholder {
+    color: #BCD0E5;
+}
+
+.sign-up__btn {
+    border: 0px solid #F90;
+    border-radius: 4px;
+    background: var(--orange, #F90);
+    width: 180px;
+    height: 50px;
+    padding: 13px 40px;
+}
