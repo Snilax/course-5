@@ -1,0 +1,128 @@
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+    font-size: 0;
+}
+
+.menu__item {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.nav__item {
+    margin: 0 auto;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.auth__item {
+    padding: 13px 25px;
+    margin-right: 16px;
+}
+
+.sign__up {
+    margin: 0;
+}
+
+.logo {
+    width: 200px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.nav__item:nth-child(-n + 2) {
+    margin-right: 169px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.menu__link {
+    color: #2F281E;
+    padding: 10px;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    display: block;
+}
+
+.sign__in {
+    width: 110px;
+    height: 46px;
+    border-radius: 4px;
+    border: solid 1px #BCD0E5;
+    background-color: #fff;
+    color: #2F281E;
+}
+
+.sign__up {
+    width: 110px;
+    height: 46px;
+    border-radius: 4px;
+    border: 0px;
+    background-color: #F90;
+    color: #fff;
+}
+
+
+.hero {
+    text-align: center;
+}
+
+section {
+    margin-top: 100px;
+}
+
+.hero__item {
+    text-align: initial;
+    vertical-align: middle;
+    margin: 0 auto;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    width: 500px;
+    height: 110px;
+    font-size: 44px;
+}
+
+.text {
+    margin-top: 30px;
+    width: 500px;
+    height: 91px;
+    font-size: 18px;
+}
+
+.get {
+    width: 180px;
+    height: 50px;
+    padding: 13px 40px;
+}
