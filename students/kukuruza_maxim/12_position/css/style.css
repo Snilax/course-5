@@ -1,0 +1,136 @@
+body {
+    background: url(../images/bg.png) no-repeat;
+    background-position: 84% 85%;
+    background-size: 33%;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    padding: 13px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFF;
+    z-index: 100;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-family: Staatliches;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+p {
+    font-size: 28px;
+}
+
+.lang {
+    text-align: center;
+    font-family: Tourney;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.88px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__link {
+    font-weight: bold;
+}
+
+
+/* Main */
+.sticky__menu {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 100px;
+    height: 462px;
+    width: calc(1200px - 70%);
+    padding: 10px
+}
+
+.menu__item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #BDBDBD;
+}
+
+.main__text {
+    margin-top: 30px;
+    width: calc(1200px - 30%);
+}
+
+.main {
+    margin-top: 70px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.chapter__title {
+    position: relative;
+    display: block;
+}
+
+sup {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.chapter__title::before {
+    content: "";
+    display: block;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+}
+
+.gray-bg {
+    background-color: #DADADA;
+}
