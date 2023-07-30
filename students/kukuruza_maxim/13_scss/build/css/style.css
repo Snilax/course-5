@@ -124,7 +124,7 @@ h1 {
   font-size: 60px;
   margin-top: 15px;
 }
-h1:after {
+h1::after {
   content: "";
   position: absolute;
   display: block;
@@ -162,22 +162,22 @@ h4 {
   padding: 15px;
   border: 1px solid #fc0;
 }
-.photo-wrapper:before {
+.photo-wrapper::before {
   content: "";
   display: block;
   position: absolute;
   left: 22%;
   z-index: 1;
-  top: 285px;
+  top: 295px;
   width: 230px;
   height: 440px;
   background-color: white;
 }
-.photo-wrapper:after {
+.photo-wrapper::after {
   content: "";
   display: block;
   position: absolute;
-  left: 15%;
+  left: 17%;
   z-index: 1;
   top: 380px;
   height: 230px;
@@ -188,7 +188,7 @@ h4 {
 h2 {
   font-size: 36px;
 }
-h2:after {
+h2::after {
   content: "";
   display: block;
   width: 100px;
@@ -222,7 +222,7 @@ h3 {
   height: 4px;
   background-color: #fc0;
 }
-.decore:before {
+.decore::before {
   content: "";
   display: block;
   background-color: #fc0;
@@ -230,7 +230,7 @@ h3 {
   height: 4px;
   margin-left: -15px;
 }
-.decore:after {
+.decore::after {
   content: "";
   display: block;
   background-color: #fc0;
