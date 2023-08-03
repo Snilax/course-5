@@ -95,6 +95,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 85px;
 }
 
 .col-6 {
@@ -106,6 +107,14 @@ p {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 50%;
+}
+.col-6:first-of-type {
+  border-right: 1px solid #fc0;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
@@ -166,22 +175,22 @@ h4 {
   content: "";
   display: block;
   position: absolute;
-  left: 22%;
+  left: 35%;
   z-index: 1;
   top: 295px;
   width: 230px;
-  height: 440px;
+  height: 460px;
   background-color: white;
 }
 .photo-wrapper::after {
   content: "";
   display: block;
   position: absolute;
-  left: 17%;
+  left: 31%;
   z-index: 1;
-  top: 380px;
+  top: 400px;
   height: 230px;
-  width: 440px;
+  width: 460px;
   background-color: white;
 }
 
