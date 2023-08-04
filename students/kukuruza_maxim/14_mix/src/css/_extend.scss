@@ -1,0 +1,32 @@
+%btn {
+    display: flex;
+    width: 110px;
+    height: 46px;
+    font-weight: 600;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+%btn-lg {
+    display: flex;
+    width: 180px;
+    height: 50px;
+    // padding: 13px 40px;
+    font-weight: 600;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+%primary {
+    border: 0px;
+    background-color: #F90;
+    color: #fff;
+}
+
+%secondary {
+    border: solid 1px #BCD0E5;
+    background-color: #fff;
+    color: #2F281E;
+}
