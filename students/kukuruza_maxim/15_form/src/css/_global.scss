@@ -1,0 +1,50 @@
+@font-face {
+    font-family: $default-font-name;
+    font-style: normal;
+    font-weight: 400;
+    src: url('#{$font-path}roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+body {
+    font-family: $main-font;
+    background-color: $white;
+    font-style: normal;
+}
+
+@include grid();
+
+.footer__title {
+    color: $black ;
+    font-family: $footer-title-font;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+nav {
+    font-family: $nav-font;
+    font-size: $main-font-size;
+    font-weight: 400;
+    line-height: 28px
+}
+
+.container {
+    padding: $container-padding;
+    max-width: $container-max-width;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $black;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
