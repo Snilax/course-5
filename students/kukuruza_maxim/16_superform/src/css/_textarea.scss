@@ -1,0 +1,21 @@
+$textarea-input-height: 150px;
+$icon-height: $textarea-input-height;
+
+
+.textarea {
+    width: 100%;
+    height: $textarea-input-height;
+    padding: 0;
+    border: 0;
+
+    &__form-area {
+        height: 180px;
+        padding: 10px;
+        resize: none;
+        outline: none;
+    }
+
+    &__form-icon {
+        height: auto;
+    }
+}
