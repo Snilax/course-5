@@ -13,14 +13,13 @@ const res1 = +a1 + b2
 console.log("Sum is: " + res1);
 
 // 3. Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки файлів розміром в 820 Мб поміщається на флешку.
-/*
+
 const sizeGB = prompt("Enter your disk size in GB :")
 const fileSize = 820
 const amountFiles = Math.floor((+sizeGB * 1000) / fileSize)
 console.log("Your disk can contain " + amountFiles + " files with 820mb size");
 
 // Норма
-*/
 // 1. Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.
 const money = prompt("Enter amount of money you have:")
 const chocPrice = prompt("Enter price of chocolate:")
@@ -31,13 +30,17 @@ console.log("You can afford " + amountOfChoc + " chocolates, your rest of money 
 
 // 2. Запитай у користувача тризначне число і виведи його задом наперед. Для вирішення завдання тобі знадобиться оператор % (залишок від ділення).
 
-const num = prompt("Enter a three-digit number")
-const myArray = num.split("");
-alert(myArray.reverse());
+
+const num = prompt("Enter a three-digit number:")
+const firstNum = +num % 10;
+const secondNum = (~~(+num / 10) % 10);
+const thirdNum = (~~(+num / 100) % 10);
+console.log(firstNum + '' + firstNum + '' + thirdNum);
 
 // Максимум
 
 // 1. Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
+
 
 const deposit = prompt("Enter sum you want to deposit on 2 months");
 const yearly = 5
