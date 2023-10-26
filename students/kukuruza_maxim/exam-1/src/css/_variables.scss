@@ -1,0 +1,33 @@
+// colors
+$white-color: #fff;
+$black: #000;
+$blue: #5373FD;
+$light-blue: #00A2FF;
+$dark-grey: #333;
+$periwinkle-gray: #BCD0E5;
+$submit-btn: $light-blue;
+$light-red: #FF6363;
+$color-mobile-menu: rgba(83, 115, 253, 0.9);
+$btn-color: linear-gradient(50deg, #486BFE 0%, #486BFE 40%, #5373FD 0%, #5373FD 100%);
+$btn-color-sm: $blue ;
+// fonts
+$fallback: Arial, Helvetica, sans-serif;
+$default-font-name: 'Josefin Sans';
+$main-font: $default-font-name, $fallback;
+$secondary-font: 'Aleo', $fallback;
+$font-path: './fonts/';
+// containers
+$container-padding: 15px;
+$container-max-width: 1200px;
+$gap: 15px;
+$defaulp-count-col: 12;
+$default-width: 1200px;
+
+$breack-points: (
+    "lg": 1200px,
+    "md": 992px,
+    "sm": 768px,
+    "xs": 576px,
+    "xxs": 480px,
+    "xxxs": 320px
+);

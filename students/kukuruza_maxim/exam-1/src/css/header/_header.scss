@@ -1,0 +1,121 @@
+@import "menu.scss";
+
+.header {
+    height: 100vh;
+}
+
+.search-bar {
+    background: url(../images/h-bg.jpg) center, no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100% - 83px);
+    position: relative;
+    font-weight: 400;
+}
+
+.sb {
+    &-text {
+        letter-spacing: 6.82px;
+        padding-bottom: 48px;
+
+        @include media(xxs) {
+            text-align: center;
+        }
+
+    }
+
+    &__scroll-link {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        display: block;
+        color: inherit;
+        text-decoration: none;
+    }
+
+}
+
+.sb-wrapper {
+    @include flex-jsc-al(center, center);
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    width: 647px;
+    position: relative;
+
+    @include media(md) {
+        width: 350px;
+    }
+
+
+    @include media(sm) {
+        width: fit-content;
+    }
+
+
+    &-btn {
+        display: flex;
+        gap: 10px;
+        border: none;
+
+        @include media(md) {
+            gap: unset;
+        }
+
+    }
+
+    &-input {
+        border: none;
+        width: 100%;
+        height: 60px;
+        box-sizing: border-box !important;
+        padding: 0 150px 0 36px;
+
+        @include media(md) {
+            padding: 0 70px 0 10px;
+        }
+    }
+
+    &-input::placeholder {
+        font-family: $main-font;
+        line-height: 20px;
+        letter-spacing: 2.8px;
+
+        @include media(md) {
+            font-size: 0.5em;
+        }
+
+        @include media (sm) {
+            letter-spacing: 1.4px;
+        }
+
+
+    }
+
+    .btn-sm {
+        position: absolute;
+        top: 5px;
+        right: 4px;
+    }
+
+    .icon-search {
+        width: 16px;
+        height: 16px;
+        fill: $white-color;
+
+    }
+}
+
+.icon-cherrow {
+    display: block;
+    width: 16px;
+    height: 14px;
+    fill: $white-color;
+    margin: 0 auto;
+}

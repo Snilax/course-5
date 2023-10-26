@@ -1,0 +1,56 @@
+.footer {
+    background-color: $black;
+
+    &__logo {
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+    &__sub-text {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.footer-wrapper {
+    padding: 80px 0 80px 0;
+}
+
+.social-list-wrapper {
+    @include flex-jsc-al (center, center);
+    gap: 32px;
+}
+
+.icon {
+    fill: $white-color;
+
+    &:hover {
+        fill: $light-blue;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.icon-facebook {
+    width: 20px;
+    height: 32px;
+}
+
+.icon-twitter {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-linkedin {
+    width: 28px;
+    height: 32px;
+}
+
+.icon-youtube {
+    width: 36px;
+    height: 32px;
+}
+
+.icon-pinterest {
+    width: 31px;
+    height: 32px;
+}

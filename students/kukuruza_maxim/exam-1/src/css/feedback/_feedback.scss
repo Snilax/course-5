@@ -1,0 +1,50 @@
+.feedback {
+    background: url(../images/feedback-bg.jpg) center;
+    background-size: cover;
+
+    &__title {
+        text-align: center;
+        padding: 120px 0 60px 0;
+
+        @include media(md) {
+            padding: 1.2em;
+        }
+
+
+    }
+
+    &__user-name {
+        padding-bottom: 9px;
+    }
+}
+
+.icon-quote-left {
+    width: 20px;
+    height: 20px;
+    fill: $light-blue;
+
+    @include media(sm) {
+        width: 1em;
+        height: 1em;
+    }
+}
+
+.feedback-wrapper {
+    background-color: $dark-grey;
+    @include flex-jsc-al (center, center);
+    margin-bottom: 150px;
+
+    @include media(md) {
+        display: block;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+}
+
+.feedback-wrapper-info {
+    padding: 36px 65px 36px 60px;
+
+    @include media(sm) {
+        padding: 0.5em;
+    }
+}

@@ -1,0 +1,68 @@
+.steps {
+    background-color: $dark-grey;
+}
+
+.icon {
+    @include flex-jsc-al (space-between, center);
+
+    @include media(sm) {
+        flex-direction: column;
+    }
+
+    &__subtitle {
+        @include media(md) {
+            font-size: 1.5em;
+        }
+    }
+
+
+    &__list {
+        width: 424px;
+        text-align: center;
+        position: relative;
+
+        @include media(md) {
+            width: fit-content;
+        }
+
+        &:not(:last-of-type)::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 300px;
+            border-top: 1px dashed #fff;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -65%;
+            left: 54%;
+            clip-path: ellipse(200px 150px at 50% 0%);
+
+            @include media(md) {
+                display: none;
+            }
+
+        }
+    }
+
+    &__item {
+        width: 64px;
+        height: 64px;
+        padding: 16px;
+        background-color: $dark-grey;
+        position: relative;
+        z-index: 1;
+
+    }
+}
+
+.icon-search {
+    fill: $light-blue;
+}
+
+.icon-check {
+    fill: $light-red;
+}
+
+.icon-thumbs-up {
+    fill: $light-blue;
+}

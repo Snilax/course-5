@@ -1,0 +1,73 @@
+.why {
+
+    .container {
+        padding-top: 110px;
+        padding-bottom: 124px;
+
+        @include media(md) {
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
+    }
+
+    @include media(sm) {
+        text-align: center;
+    }
+
+    .row {
+        @include flex-jsc-al (center, center);
+    }
+
+    background: url(../images/why-bg.jpg);
+    background-position: center -200px;
+    background-size: cover;
+
+    @include media-m(lg) {
+        background-position-y: -400px;
+    }
+
+    &__title {
+        padding-bottom: 24px;
+    }
+
+    &__text {
+        padding-bottom: 32px;
+    }
+
+    &__btn {
+        padding-left: 32px;
+        padding-right: 32px;
+
+    }
+}
+
+.images-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    padding: 0 100px 0 100px;
+    gap: 16px;
+
+    @include media(md) {
+        padding: 0 15px 0 15px;
+    }
+
+    &__place-first {
+        align-self: flex-start;
+
+        @include media(md) {
+            align-self: center;
+        }
+    }
+
+    &__place-second {
+        align-self: flex-end;
+
+        @include media(md) {
+            align-self: center;
+        }
+    }
+
+}
