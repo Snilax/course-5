@@ -1,5 +1,5 @@
-.booknow-second {
-    background: url(../images/booknow-second.jpg) center;
+.booknow-first {
+    background: url(../images/booknow-first.jpg) center;
     background-size: cover;
 
     @include media(md) {
@@ -10,6 +10,7 @@
         font-size: 20px;
         padding-bottom: 16px;
         letter-spacing: 2px;
+
     }
 
     &__title {
@@ -21,12 +22,19 @@
     }
 }
 
-.booknow-second-wrapper {
+.booknow-first-wrapper {
     padding: 32px;
     margin-top: 220px;
     margin-bottom: 120px;
     background-color: #333;
     opacity: 0.9;
 
+
+
+    @include media(md) {
+        margin-top: 120px;
+        margin-bottom: 120px;
+
+    }
 
 }

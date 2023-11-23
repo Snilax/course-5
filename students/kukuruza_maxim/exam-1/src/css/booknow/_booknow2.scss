@@ -1,10 +1,12 @@
-.booknow-first {
-    background: url(../images/booknow-first.jpg) center;
+.booknow-second {
+    background: url(../images/booknow-second.jpg) center;
     background-size: cover;
 
     @include media(md) {
         padding: 15px;
     }
+
+    ;
 
     &__sub-title {
         font-size: 20px;
@@ -21,14 +23,17 @@
     }
 }
 
-.booknow-first-wrapper {
+.booknow-second-wrapper {
     padding: 32px;
     margin-top: 220px;
     margin-bottom: 120px;
     background-color: #333;
     opacity: 0.9;
 
+
     @include media(md) {
-        padding: 15px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+
     }
 }
