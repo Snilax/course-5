@@ -2,6 +2,10 @@
     background: url(../images/booknow-second.jpg) center;
     background-size: cover;
 
+    @include media(md) {
+        padding: 15px;
+    }
+
     &__sub-title {
         font-size: 20px;
         padding-bottom: 16px;
@@ -23,4 +27,6 @@
     margin-bottom: 120px;
     background-color: #333;
     opacity: 0.9;
+
+
 }
