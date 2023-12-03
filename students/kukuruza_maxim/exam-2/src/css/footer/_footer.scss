@@ -7,6 +7,7 @@
         width: 800px;
         max-width: 800px;
         margin: 0 auto;
+        margin-top: 50px;
     }
 }
 
@@ -23,20 +24,50 @@
     width: 770px;
     height: 450px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
     color: #000;
-    margin-top: -200px;
+    margin-top: -300px;
     box-shadow: 5px 0px 10px 0px #000;
+
+    @include media(md) {
+        width: 450px;
+        height: 770px;
+
+    }
+
+    @include media(sm) {
+        width: 350px;
+        height: 770px;
+
+    }
+
+    @include media(xs) {
+        width: 300px;
+        height: 770px;
+
+    }
 }
 
 .contacts {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include media(md) {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+
+    }
 }
 
 .contact__address {
     color: #000;
     text-decoration: none;
+    display: flex;
+    gap: 10px;
 
     svg {
         fill: #7e5aff;
@@ -50,6 +81,18 @@
     gap: 20px;
 }
 
+.contact__title-wrapper {
+    @include media(md) {
+        margin-bottom: -80px;
+        height: 150px;
+
+    }
+
+
+
+
+}
+
 .contact__title {
     font-family: $default-font-name;
     font-size: 44px;
@@ -58,6 +101,15 @@
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
+
+    @include media(sm) {
+        margin-bottom: -50px;
+        font-size: 30px;
+
+
+
+    }
+
 
     &::before {
         content: "";
@@ -75,8 +127,18 @@
     gap: 20px;
     flex-direction: column;
 
-    .more-btn {
+    .form__label {
+        display: flex;
+        justify-content: center;
         color: #000;
+
+        .more-btn {
+            color: #000;
+            width: 100px;
+            margin: 0 auto;
+
+            text-align: center;
+        }
     }
 }
 
@@ -90,4 +152,18 @@
     line-height: 27px;
     color: #000;
     opacity: 0.3;
+}
+
+.form__label.error {
+    display: flex;
+    flex-direction: column;
+    color: red;
+
+    border-color: red;
+}
+
+.form__label.success {
+    display: flex;
+    flex-direction: column;
+    border-color: green;
 }

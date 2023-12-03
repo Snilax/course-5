@@ -39,6 +39,7 @@
     "gulp-cli": "^2.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-sourcemaps": "^3.0.0",
+    "just-validate": "^4.3.0",
     "progress-webpack-plugin": "^1.0.16"
   }
 }

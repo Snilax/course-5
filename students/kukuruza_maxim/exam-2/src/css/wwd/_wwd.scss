@@ -44,12 +44,12 @@
     &::before {
         content: "";
         display: block;
-        width: 120%;
+        width: 100%;
         height: 100%;
-        background: $cyan-Blue;
+        background: #55b7ff;
         position: absolute;
         top: -15%;
-        right: -35%;
+        right: -15%;
         z-index: -1;
     }
 
@@ -126,7 +126,7 @@
 .rr {
     display: flex;
 
-    @include media(md) {
+    @include media(sm) {
 
         display: flex;
         flex-direction: column-reverse;

@@ -1,10 +1,10 @@
 <footer class="footer">
     <div class="container">
         <div class="row contact__card">
-            <div class="col-12">
+            <div class="col-12 contact__title-wrapper ">
                 <h1 class="contact__title">GET IN TOUCH</h1>
             </div>
-            <div class="contacts col-12">
+            <div class="contacts col-12 ">
                 <div class="contact__info">
                     <p class="contact__address">
                         <svg class="ftr__svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -33,17 +33,21 @@
                         </svg>From 07:05AM to 19:30PM
                     </p>
                 </div>
-                <form class="form" action="#" method="post" autocomplete="off" novalidate="novalidate">
+                <form id="form" class="form" action="#" method="post">
                     <div class="form__label">
-                        <input class="ftr__input" type="text" id="fname" name="fullname" placeholder="Fullname"
+                        <input class="ftr__input " type="text" id="name" name="fullname" placeholder="Fullname"
                             autocomplete="name" value="">
+                        <small></small>
                     </div>
                     <div class="form__label">
-                        <input class="ftr__input" type="text" id="email" name="email" placeholder="Email"
+                        <input class="ftr__input " type="text" id="email" name="email" placeholder="Email"
                             autocomplete="email" value="">
+                        <small></small>
                     </div>
-                    <div class="button_footer">
-                        <button class="btn more-btn" type="submit">Submit</button>
+                    <div class="form__label">
+
+                        <!-- <button class="btn more-btn" type="submit">Submit</button> -->
+                        <input type="submit" class="btn more-btn" value="Sign Up">
                     </div>
                 </form>
             </div>

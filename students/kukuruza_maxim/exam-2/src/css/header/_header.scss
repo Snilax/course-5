@@ -123,6 +123,12 @@
             gap: 20px;
 
         }
+
+        @include media(xs) {
+            .menu__social {
+                display: none;
+            }
+        }
     }
 }
 

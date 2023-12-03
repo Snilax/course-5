@@ -1,15 +1,6 @@
-// import Menu from "../js/navMenu"
+// import validateForm from "../js/validationForm"
 
-function showSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = "flex"
-}
-function hideSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = "none"
-}
-
-
+// validateForm()
 $('.hero').each(function () {
     var $slider = $(this);
 
