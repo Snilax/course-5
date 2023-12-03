@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monticello</title>
+    <script type="text/javascript" defer src="./js/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    @@include('./_header.html')
+    <main class="main">
+        @@include('./_hero.html')
+        @@include('./_what-we-do.html')
+        @@include('./_latest-news.html')
+        @@include('./_gallery.html')
+        @@include('./_map.html')
+    </main>
+    @@include('./_footer.html')
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript"> function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = "flex"
+            sidebar.style.transform = "translateX(0%)"
+            sidebar.style.transition = "all .2s ease .3s"
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.transform = "translateX(100%)"
+            sidebar.style.transition = ".2s all ease .3s"
+
+
+        }</script>
+</body>
+
+</html>

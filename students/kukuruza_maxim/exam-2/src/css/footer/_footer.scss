@@ -1,0 +1,93 @@
+.footer {
+    background: url(../../images/footer.png), linear-gradient(251deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    &-info {
+        width: 800px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.row-f {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__card {
+    background: url(../../images/city-img.png), #ffffff;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 770px;
+    height: 450px;
+    margin: 0 auto;
+    color: #000;
+    margin-top: -200px;
+    box-shadow: 5px 0px 10px 0px #000;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact__address {
+    color: #000;
+    text-decoration: none;
+
+    svg {
+        fill: #7e5aff;
+    }
+}
+
+.contact__info {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact__title {
+    font-family: $default-font-name;
+    font-size: 44px;
+    font-weight: 700;
+    color: $rhino;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 3px;
+        background: $rhino;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+
+.form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    .more-btn {
+        color: #000;
+    }
+}
+
+.ftr__input {
+    border: 0;
+    border-bottom: 1px solid #2C4058;
+    background: transparent;
+    width: 100%;
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+    opacity: 0.3;
+}
