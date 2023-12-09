@@ -1,4 +1,3 @@
-
 const header = $('.header');
 let isHeaderBg = false;
 

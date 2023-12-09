@@ -1,4 +1,9 @@
 .gallery {
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 
     h1 {
         font-family: $default-font-name;
@@ -42,113 +47,26 @@
 
     .gallery-list {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px 10px;
-        grid-template-areas:
-            "gallery-img-lg gallery-img-lg gallery-img-sm1 gallery-img-sm3"
-            "gallery-img-lg gallery-img-lg gallery-img-sm2 gallery-img-sm4";
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 0 auto;
 
-        @include media(lg) {
-            display: grid;
-            justify-content: center;
-            margin: 0 auto;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-areas:
-                "gallery-img-lg gallery-img-lg"
-                "gallery-img-lg gallery-img-lg"
-                "gallery-img-sm1 gallery-img-sm2"
-                "gallery-img-sm3 gallery-img-sm4"
-        }
     }
 
-    .gallery-img-lg {
-        @include media(sm) {
-            width: 400px;
-            height: 300px;
-        }
 
-        box-sizing: border-box;
-        width: 580px;
-        height: 438px;
-        grid-area: gallery-img-lg;
-    }
 
-    .img-res {
-        width: 285px;
-        height: 214px;
-
-        @include media(sm) {
-            width: 185px;
-            height: 114px;
-        }
-    }
-
-    .gallery-img-sm1 {
-
-        grid-area: gallery-img-sm1;
-    }
-
-    .gallery-img-sm2 {
-
-        grid-area: gallery-img-sm2;
-    }
-
-    .gallery-img-sm3 {
-
-        grid-area: gallery-img-sm3;
-    }
-
-    .gallery-img-sm4 {
-
-        grid-area: gallery-img-sm4;
-    }
-
-    // .gallery-img
-
-    &-img {
-
-        &-lg {}
-    }
-}
-
-.container {}
-
-.row {}
-
-.col {
-
-    // .col-6
-
-    &-6 {}
-
-    // .col-3
-
-    &-3 {}
-}
-
-.btn {}
-
-input#chb {
-    display: none;
-    opacity: 0;
-}
-
-input#chb:checked~.content {
-    transition: all .5s;
-    transition: opacity .5s, visibility .5s;
-    opacity: 1;
-    visibility: visible;
 
 }
 
-input#chb:checked~.more-btn {
+.hidden {
     display: none;
 }
 
-.content {
-    visibility: hidden;
-    opacity: 0;
+.gallery__img-first {
+    grid-column: 1 / span 2;
+    grid-row: 1 /span 2;
 
+    @include media(sm) {
+        grid-column: 1 / span 4;
+    }
 }

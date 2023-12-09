@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello</title>
-    <script type="text/javascript" defer src="./js/script.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -18,25 +19,29 @@
             <div class="col-12">
                 <nav class="menu">
                     <img class="logo" src="./images/logo.png" alt="">
-                    <ul class="menu__nav">
-                        <li class="menu__item"><a class="menu__link" href="#top">about us</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#wwd">projects</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#news">news</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#footer">contact</a></li>
-                        <ul class="menu__social">
-                            <li class="menu__social-item"><img src="./images/fb.png" alt="facebook"></li>
-                            <li class="menu__social-item"><img src="./images/twitter.png" alt="twitter"></li>
-                            <li class="menu__social-item"><img src="./images/inst.png" alt="insta"></li>
-                        </ul>
+                    <div class="menu-wrapper">
+                        <button class="menu-click only-mobile">
+                            <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="50"
+                                viewBox="0 -960 960 960" width="50">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg>
+                        </button>
+                        <ul class="menu__nav ">
+                            <li class="menu__item"><a class="menu__link" href="#top">about us</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#wwd">projects</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#news">news</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#footer">contact</a></li>
+                            <ul class="menu__social">
+                                <li class="menu__social-item"><img src="./images/fb.png" alt="facebook"></li>
+                                <li class="menu__social-item"><img src="./images/twitter.png" alt="twitter"></li>
+                                <li class="menu__social-item"><img src="./images/inst.png" alt="insta"></li>
+                            </ul>
 
-                        <li class="menu-click" onclick=showSidebar()><a href="#"><svg class="menu-icon"
-                                    xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50">
-                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                                </svg></a></li>
-                    </ul>
-                    <ul class="sidebar">
-                        <li onclick=hideSidebar()><a href="#"><svg class="menu-icon" xmlns="http://www.w3.org/2000/svg"
-                                    height="24" viewBox="0 -960 960 960" width="24">
+                        </ul>
+                    </div>
+                    <!-- <ul class="sidebar">
+                        <li onclick="hideSidebar()"><a href="#"><svg class="menu-icon"
+                                    xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                                     <path
                                         d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                                 </svg></a></li>
@@ -49,7 +54,7 @@
                             <li class="menu__social-item"><img src="./images/twitter.png" alt="twitter"></li>
                             <li class="menu__social-item"><img src="./images/inst.png" alt="insta"></li>
                         </ul>
-                    </ul>
+                    </ul> -->
                 </nav>
             </div>
         </div>
@@ -58,59 +63,43 @@
 
     <main class="main">
         <section class="hero">
-    <div class="nav-dots">
-        <div class="nav-dot" data-slide="1">
+    <div class="slider__items">
+        <div class="hero-slider__item ">
+            <img class="hero-slider__img " src="./images/header-bg1.png" alt="">
+            <div class="container hero-slider__container">
+                <h1 class="title__heading">SIMPLE &amp; MODERN</h1>
+                <p class="title__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
         </div>
-        <div class="nav-dot" data-slide="2">
+        <div class="hero-slider__item">
+            <img class="hero-slider__img" src="./images/slider-1.webp" alt="">
+            <div class="container hero-slider__container">
+                <h2 class="title__heading">COZY &amp; CREATIVE</h2>
+                <p class="title__text">DESIGN OF DISTINCTION INSPIRED BY IMAGINATION</p>
+            </div>
         </div>
-        <div class="nav-dot" data-slide="3">
+        <div class="hero-slider__item">
+            <img class="hero-slider__img" src="./images/slider-2.jpg" alt="">
+            <div class="container hero-slider__container">
+                <h2 class="title__heading">HIGH QUALITY</h2>
+                <p class="title__text">RISING ABOVE EXPECTATIONS</p>
+            </div>
         </div>
-        <div class="nav-dot" data-slide="4">
+        <div class="hero-slider__item">
+            <img class="hero-slider__img" src="./images/slider-3.jpg" alt="">
+            <div class="container hero-slider__container">
+                <h2 class="title__heading">BUILD &amp; INSPIRE</h2>
+                <p class="title__text">WE ARE A POSSIBILITIES COMPANY</p>
+            </div>
         </div>
-        <div class="nav-dot" data-slide="5">
-        </div>
-    </div>
-
-    <div class="hero-slider__item" data-slide="1">
-        <img class="hero-slider__img header-bg" src="./images/header-bg.jpg" alt="">
-        <div class="container hero-slider__container">
-            <h1 class="title__heading">SIMPLE &amp; MODERN</h1>
-            <p class="title__text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-        </div>
-    </div>
-    <div class="hero-slider__item" data-slide="2">
-        <img class="hero-slider__img" src="./images/slider-1.webp" alt="">
-        <div class="container hero-slider__container">
-            <h2 class="title__heading">COZY &amp; CREATIVE</h2>
-            <p class="title__text">DESIGN OF DISTINCTION INSPIRED BY IMAGINATION</p>
-        </div>
-    </div>
-    <div class="hero-slider__item" data-slide="3">
-        <img class="hero-slider__img" src="./images/slider-2.jpg" alt="">
-        <div class="container hero-slider__container">
-            <h2 class="title__heading">HIGH QUALITY</h2>
-            <p class="title__text">RISING ABOVE EXPECTATIONS</p>
-        </div>
-    </div>
-    <div class="hero-slider__item" data-slide="4">
-        <img class="hero-slider__img" src="./images/slider-3.jpg" alt="">
-        <div class="container hero-slider__container">
-            <h2 class="title__heading">BUILD &amp; INSPIRE</h2>
-            <p class="title__text">WE ARE A POSSIBILITIES COMPANY</p>
+        <div class="hero-slider__item">
+            <img class="hero-slider__img" src="./images/slider-4.jpg" alt="">
+            <div class="container hero-slider__container">
+                <h2 class="title__heading">INNOVATIVE ARCHITECTURE</h2>
+                <p class="title__text">A NEW VISION OF ARCHTECTURE AND DESIGN</p>
+            </div>
         </div>
     </div>
-    <div class="hero-slider__item" data-slide="5">
-        <img class="hero-slider__img" src="./images/slider-4.jpg" alt="">
-        <div class="container hero-slider__container">
-            <h2 class="title__heading">INNOVATIVE ARCHITECTURE</h2>
-            <p class="title__text">A NEW VISION OF ARCHTECTURE AND DESIGN</p>
-        </div>
-    </div>
-
-    <div class="arrow">
-        <a class="arrow__down" href="#wwd"> </a>
-    </div>
-
 </section>
 
         <section class="wwd" id="wwd">
@@ -172,39 +161,42 @@
                     </p>
                     <div class="frame__user">
                         <img src="./images/user-1.jpg" alt="user" class="frame__user-img">
-                        <p class="user-name">ALJA BRUN</p>
-                        <p class="user-date">20 Jan 2020</p>
+                        <div class="frame__user-text">
+                            <p class="user-name">ALJA BRUN</p>
+                            <p class="user-date">20 Jan 2020</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="frame__card col-3 col-sm-1">
-
                 <img src="./images/news-img2.jpg" alt="news" class="frame__img">
                 <div class="frame__card-text">
                     <h3 class="frame__title">EFFECTIVE ADVERTISING POINTERS.</h3>
                     <p class="frame__desc">Having a home based business is a wonderful asset to your life...</p>
                     <div class="frame__user">
                         <img src="./images/user-2.jpg" alt="user" class="frame__user-img">
-                        <p class="user-name">DOMINIC FREEMAN</p>
-                        <p class="user-date">13 Dec 2019</p>
+                        <div class="frame__user-text">
+                            <p class="user-name">DOMINIC FREEMAN</p>
+                            <p class="user-date">13 Dec 2019</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="frame__card col-3 col-sm-1">
-
                 <img src="./images/news-img3.jpg" alt="news" class="frame__img">
                 <div class="frame__card-text">
                     <h3 class="frame__title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
                     <p class="frame__desc">There are many things that are important to catalog design...</p>
                     <div class="frame__user">
                         <img src="./images/user-3.jpg" alt="user" class="frame__user-img">
-                        <p class="user-name">ALICE WARD</p>
-                        <p class="user-date">30 Nov 2019</p>
+                        <div class="frame__user-text">
+                            <p class="user-name">ALICE WARD</p>
+                            <p class="user-date">30 Nov 2019</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="frame__card col-3 col-sm-1">
-
                 <img src="./images/news-img2.jpg" alt="news" class="frame__img">
                 <div class="frame__card-text">
                     <h3 class="frame__title">EFFECTIVE ADVERTISING POINTERS.</h3>
@@ -212,8 +204,10 @@
                     </p>
                     <div class="frame__user">
                         <img src="./images/user-2.jpg" alt="user" class="frame__user-img">
-                        <p class="user-name">DOMINIC FREEMAN</p>
-                        <p class="user-date">13 Dec 2019</p>
+                        <div class="frame__user-text">
+                            <p class="user-name">DOMINIC FREEMAN</p>
+                            <p class="user-date">13 Dec 2019</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -225,8 +219,10 @@
                         life...</p>
                     <div class="frame__user">
                         <img src="./images/user-2.jpg" alt="user" class="frame__user-img">
-                        <p class="user-name">DOMINIC FREEMAN</p>
-                        <p class="user-date">13 Dec 2019</p>
+                        <div class="frame__user-text">
+                            <p class="user-name">DOMINIC FREEMAN</p>
+                            <p class="user-date">13 Dec 2019</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,8 +234,10 @@
                         life...</p>
                     <div class="frame__user">
                         <img src="./images/user-2.jpg" alt="user" class="frame__user-img">
-                        <p class="user-name">DOMINIC FREEMAN</p>
-                        <p class="user-date">13 Dec 2019</p>
+                        <div class="frame__user-text">
+                            <p class="user-name">DOMINIC FREEMAN</p>
+                            <p class="user-date">13 Dec 2019</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -250,39 +248,46 @@
 </section>
 
         <section class="gallery">
-    <input class="chb" name="chb" id="chb" type="checkbox">
     <h1>GALLERY</h1>
-    <div class="gallery container row">
+    <div class="gallery container">
         <div class="gallery-list col-md-8">
-            <div class="gallery-img-lg"><img src="./images/g-1.jpg" alt=""></div>
-            <div class="gallery-img-sm1 img-res"><img src="./images/g-2.jpg" alt=""></div>
-            <div class="gallery-img-sm2 img-res"><img src="./images/g-3.jpg" alt=""></div>
-            <div class="gallery-img-sm3 img-res"><img src="./images/g-4.jpg" alt=""></div>
-            <div class="gallery-img-sm4 img-res"><img src="./images/g-5.jpg" alt=""></div>
+            <a class="gallery__img-first" href="./images/g-1.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-lg" src="./images/g-1.jpg" alt=""></a>
+            <a class="gallery__img" href="./images/g-2.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm1 img-res" src="./images/g-2.jpg" alt=""></a>
+            <a class="gallery__img" href="./images/g-3.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm2 img-res" src="./images/g-3.jpg" alt=""></a>
+            <a class="gallery__img" href="./images/g-4.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm3 img-res" src="./images/g-4.jpg" alt=""></a>
+            <a class="gallery__img" href="./images/g-5.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm4 img-res" src="./images/g-5.jpg" alt=""></a>
+            <a class="gallery__img-extra hidden-item hidden" href="./images/g-2.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm1 img-res " src="./images/g-2.jpg" alt=""></a>
+            <a class="gallery__img-extra hidden-item hidden" href="./images/g-3.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm2 img-res " src="./images/g-3.jpg" alt=""></a>
+            <a class="gallery__img-extra hidden-item hidden" href="./images/g-4.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm3 img-res " src="./images/g-4.jpg" alt=""></a>
+            <a class="gallery__img-extra hidden-item hidden " href="./images/g-1.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-lg  " src="./images/g-1.jpg" alt=""></a>
+            <a class="gallery__img-extra hidden-item hidden" href="./images/g-5.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm4 img-res " src="./images/g-5.jpg" alt=""></a>
+            <a class="gallery__img-extra hidden-item hidden" href="./images/g-2.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm1 img-res " src="./images/g-2.jpg" alt=""></a>
+            <a class="gallery__img-extra hidden-item hidden" href="./images/g-3.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm2 img-res " src="./images/g-3.jpg" alt=""></a>
+            <a class="gallery__img-extra hidden-item hidden" href="./images/g-4.jpg" data-lightbox="galleryimage">
+                <img class="gallery-img-sm3 img-res " src="./images/g-4.jpg" alt=""></a>
+
         </div>
-    </div>
-    <label class="btn more-btn" for="chb">
-        SEE MORE
-    </label>
-    <div class="gallery container row content">
-        <div class="gallery-list col-md-8">
-            <div class="gallery-img-sm1 img-res"><img src="./images/g-2.jpg" alt=""></div>
-            <div class="gallery-img-sm2 img-res"><img src="./images/g-3.jpg" alt=""></div>
-            <div class="gallery-img-sm3 img-res"><img src="./images/g-4.jpg" alt=""></div>
-            <div class="gallery-img-sm4 img-res"><img src="./images/g-5.jpg" alt=""></div>
-            <div class="gallery-img-lg"><img src="./images/g-1.jpg" alt=""></div>
-        </div>
-        <label class=" btn more-btn" for="chb">
-            SEE LESS
-        </label>
+        <button id="button" class="btn more-btn">See More</button>
     </div>
 
 </section>
 
         <section class="map" id="map">
   <iframe
-    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d44068.1247057762!2d-73.9418897356946!3d40.628393127874126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1701612770558!5m2!1sen!2sus"
-    class="map-emb" style="width: 100vw; height: 450px;" allowfullscreen="true" loading="lazy"
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d51298.39235923028!2d-73.87813681211378!3d40.66950763526832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1702127456108!5m2!1sen!2sus"
+    class="map-emb" style="width: 100vw; height: 650px;" allowfullscreen="true" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
@@ -336,7 +341,7 @@
                     <div class="form__label">
 
                         <!-- <button class="btn more-btn" type="submit">Submit</button> -->
-                        <input type="submit" class="btn more-btn" value="Sign Up">
+                        <input type="submit" class="btn more-btn" value="Submit">
                     </div>
                 </form>
             </div>
@@ -357,23 +362,11 @@
     </div>
 </footer>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript"> function showSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.display = "flex"
-            sidebar.style.transform = "translateX(0%)"
-            sidebar.style.transition = "all .2s ease .3s"
-        }
-        function hideSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.style.transform = "translateX(100%)"
-            sidebar.style.transition = ".2s all ease .3s"
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
 
-
-        }</script>
 </body>
 
 </html>

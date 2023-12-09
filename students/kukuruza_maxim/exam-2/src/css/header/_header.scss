@@ -7,6 +7,11 @@
     padding: 15px;
 }
 
+.bg-header {
+    background-color: $cyan-Blue;
+    opacity: 0.9;
+}
+
 .nav {
     margin-top: 15px;
     display: flex;
@@ -46,7 +51,10 @@
 
     &__item {
         @include media(sm) {
-            display: none;
+
+            a {
+                font-size: 24px;
+            }
         }
 
 
@@ -111,6 +119,32 @@
     }
 
     &__nav {
+        @include media(sm) {
+            display: none;
+            background-color: $cyan-Blue;
+            box-shadow: -1px 5px 29px -2px rgba(0, 0, 0, 0.48);
+            position: fixed;
+            top: 100px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            transform: translateX(-100%);
+            transition: transform .3s ease-in-out;
+
+            ._open & {
+                gap: 50px;
+
+                transform: translateX(0);
+
+            }
+        }
+
         @extend .menu;
         gap: 70px;
 
@@ -120,16 +154,17 @@
         }
 
         @include media(md) {
+            .menu__social {
+                display: none;
+            }
+
             gap: 20px;
 
         }
 
-        @include media(xs) {
-            .menu__social {
-                display: none;
-            }
-        }
+
     }
+
 }
 
 .sidebar {
@@ -144,13 +179,11 @@
     color: black;
     transform: translateX(100%);
 
-    @include media(sm) {
 
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 20px;
-        padding-left: 20px;
-    }
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
 
     .menu__social {
         gap: 20px;
@@ -175,4 +208,20 @@
     @include media(sm) {
         display: flex;
     }
+}
+
+.menu-wrapper {
+    display: flex;
+}
+
+.only-mobile {
+    @include media-m(sm) {
+        display: none;
+    }
+}
+
+.menu-click {
+    background: transparent;
+    border: unset;
+    cursor: pointer;
 }
