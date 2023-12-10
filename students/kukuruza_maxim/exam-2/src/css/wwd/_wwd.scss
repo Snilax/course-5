@@ -33,6 +33,11 @@
         top: -15%;
         left: -35%;
         z-index: -1;
+
+        @include media(md) {
+            content: unset;
+
+        }
     }
 }
 
@@ -51,6 +56,11 @@
         top: -15%;
         right: -15%;
         z-index: -1;
+
+        @include media(md) {
+            content: unset;
+
+        }
     }
 
 }

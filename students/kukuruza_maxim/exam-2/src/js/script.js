@@ -16,6 +16,7 @@ $('.slider__items').slick({
     dots: true,
     verticalSwiping: false,
     adaptiveHeight: true,
+    swipe: false,
     arrows: false,
 });
 
@@ -57,7 +58,9 @@ $('.lt-news__carousel').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: true,
+                arrows: false,
+
             }
         }
 

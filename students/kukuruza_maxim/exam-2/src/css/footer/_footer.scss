@@ -167,3 +167,20 @@
     flex-direction: column;
     border-color: green;
 }
+
+.arrow-top {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    position: fixed;
+    top: 85%;
+    right: 10%;
+    transform: rotate(-90deg);
+    z-index: 100;
+
+    @include media(sm) {
+        height: 50px;
+        width: 50px;
+
+    }
+}

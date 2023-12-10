@@ -14,10 +14,6 @@ const isEmailValid = (email) => {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 };
-const isPasswordSecure = (password) => {
-    const re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
-    return re.test(password);
-};
 const showError = (input, message) => {
     // get the form-field element
     const formLabel = input.parentElement;
@@ -37,7 +33,6 @@ const showSuccess = (input) => {
     // remove the error class
     formLabel.classList.remove('error');
     formLabel.classList.add('success');
-
     // hide the error message
     const error = formLabel.querySelector('small');
     error.textContent = '';
@@ -83,14 +78,8 @@ form.addEventListener('submit', function (e) {
         isEmailValid = checkEmail();
 
     let isFormValid = isUsernameValid &&
-        isEmailValid &&
-        isPasswordValid &&
-        isConfirmPasswordValid;
+        isEmailValid;
 
-    // submit to the server if the form is valid
-    if (isFormValid) {
-
-    }
 });
 
 form.addEventListener('input', function (e) {

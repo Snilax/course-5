@@ -2,7 +2,7 @@
     background: linear-gradient(237deg, #24CCFA 11.16%, #3C7FD4 89.18%);
     padding-bottom: 120px;
 
-    h1 {
+    h2 {
         padding-top: 150px;
         text-align: center;
         margin-top: 150px;
@@ -170,7 +170,6 @@ button.slick-prev,
 button.slick-next {
     position: absolute;
     top: 50%;
-    cursor: pointer;
     color: transparent;
     border: 0;
     outline: none;
@@ -181,6 +180,11 @@ button.slick-next {
     border-radius: 50%;
     cursor: pointer;
     transition: all 300ms ease-out;
+
+    @include media(sm) {
+        display: none;
+
+    }
 }
 
 button.slick-next {
@@ -197,6 +201,11 @@ button.slick-next {
         height: 40px;
         margin: 0 auto;
         font-size: 20px;
+
+        @include media(sm) {
+            content: unset;
+
+        }
     }
 }
 
@@ -215,5 +224,10 @@ button.slick-prev {
         height: 40px;
         margin: 0 auto;
         font-size: 20px;
+
+        @include media(sm) {
+            content: unset;
+
+        }
     }
 }

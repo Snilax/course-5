@@ -16,7 +16,7 @@
     <header class="header">
     <div class="container ">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 ">
                 <nav class="menu">
                     <img class="logo" src="./images/logo.png" alt="">
                     <div class="menu-wrapper">
@@ -39,29 +39,13 @@
 
                         </ul>
                     </div>
-                    <!-- <ul class="sidebar">
-                        <li onclick="hideSidebar()"><a href="#"><svg class="menu-icon"
-                                    xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                                    <path
-                                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                                </svg></a></li>
-                        <li class="menu__item"><a class="menu__link" href="#top">about us</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#wwd">projects</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#news">news</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#footer">contact</a></li>
-                        <ul class="menu__social">
-                            <li class="menu__social-item"><img src="./images/fb.png" alt="facebook"></li>
-                            <li class="menu__social-item"><img src="./images/twitter.png" alt="twitter"></li>
-                            <li class="menu__social-item"><img src="./images/inst.png" alt="insta"></li>
-                        </ul>
-                    </ul> -->
                 </nav>
             </div>
         </div>
     </div>
 </header>
 
-    <main class="main">
+    <main class="main" id="top">
         <section class="hero">
     <div class="slider__items">
         <div class="hero-slider__item ">
@@ -100,6 +84,10 @@
             </div>
         </div>
     </div>
+    <a href="#wwd">
+        <div class="arrow__down">
+        </div>
+    </a>
 </section>
 
         <section class="wwd" id="wwd">
@@ -149,7 +137,7 @@
 </section>
 
         <section class="lt-news" id="news">
-    <h1>LATEST NEWS</h1>
+    <h2>LATEST NEWS</h2>
     <div class="container">
         <div class="lt-news__carousel">
             <div class="frame__card col-3 col-sm-1">
@@ -361,10 +349,11 @@
         </div>
     </div>
 </footer>
+<div class="arrow-top"><a href="#top"><img src="./images/arrow-top.png" alt="scroll-to-top"></a></div>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
     <script src="./js/script.js"></script>
 
 </body>
