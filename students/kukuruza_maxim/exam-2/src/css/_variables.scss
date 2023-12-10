@@ -1,0 +1,31 @@
+// colors
+$white-color: #fff;
+$black-color: #000;
+$rhino: #2C4058;
+$cyan-Blue: #55b7ff;
+$blueberry: #7e5aff;
+$midnight: #4B5562;
+// fonts
+$default-font-name: 'Montserrat';
+$fallback: Arial, Helvetica, sans-serif;
+$default-font-size: 18px;
+$sourcesans-font: 'Source Sans 3';
+$opensans-font: 'Open Sans';
+$main-font: $default-font-name, $fallback;
+$font-path: './fonts/';
+$def-btn-bg-color: transparent;
+// containers
+$container-padding: 15px;
+$container-max-width: 1200px;
+$gap: 15px;
+$defaulp-count-col: 12;
+$default-width: 1200px;
+
+$breack-points: (
+    "lg": 1200px,
+    "md": 992px,
+    "sm": 768px,
+    "xs": 576px,
+    "xxs": 480px,
+    "xxxs": 320px
+);
